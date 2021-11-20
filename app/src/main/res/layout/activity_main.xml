@@ -6,17 +6,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingLeft="40dp"
-    tools:context=".MainActivity" >:layout_constraintTop_toBottomOf="@+id/btn1" />
+    tools:context=".Activities.MainActivity">:layout_constraintTop_toBottomOf="@+id/btn1" />
 
     <Button
         android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="send to list of Hobbies"
         android:onClick="sendtoList"
+        android:text="send to list of Hobbies"
         app:layout_constraintHorizontal_bias="0.407"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="2dp" />
+        tools:layout_editor_absoluteY="2dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

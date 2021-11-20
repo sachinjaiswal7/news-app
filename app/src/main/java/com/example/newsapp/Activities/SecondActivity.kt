@@ -1,12 +1,9 @@
-package com.example.newsapp
+package com.example.newsapp.Activities
 
 import android.os.Bundle
 import android.os.PersistableBundle
-import android.view.View
-import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.widget.ConstraintLayout
+import com.example.newsapp.R
 
 class SecondActivity :AppCompatActivity() {
 
