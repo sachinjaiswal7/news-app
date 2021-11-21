@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">news App</string>
     <string name="enter_the_name">Enter the name</string>
+    <string name="send_to_list_of_hobbies">send to list of Hobbies</string>
+    <string name="line_10">line 10</string>
+    <string name="you_are_redirected_to_new_page">You are redirected to new page</string>
+    <string name="Clicked">Clicked</string>
+    <string name="at">at</string>
+    <string name="Share_to">Share to</string>
 </resources>

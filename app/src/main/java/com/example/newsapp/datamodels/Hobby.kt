@@ -2,7 +2,7 @@ package com.example.newsapp
 
 data class Hobby(val text :String)
 object Supplier{
-    val hobbies = listOf<Hobby>(
+    var hobbies:List<Hobby> = listOf(
         Hobby("gaming"),
         Hobby("watching anime"),
         Hobby("studying"),

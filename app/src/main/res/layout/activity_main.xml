@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="sendtoList"
-        android:text="send to list of Hobbies"
+        android:text="@string/send_to_list_of_hobbies"
         app:layout_constraintHorizontal_bias="0.407"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

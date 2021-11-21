@@ -1,6 +1,7 @@
 package com.example.newsapp.Activities
 
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -22,6 +23,10 @@ class HobbiesActivity : AppCompatActivity() {
         rcv1.layoutManager = layoutmanager
         val adapter = HobbiesAdapter(this, Supplier.hobbies)
         rcv1.adapter = adapter
+
     }
+
+
+
 
 }

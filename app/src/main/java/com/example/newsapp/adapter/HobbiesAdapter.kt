@@ -2,6 +2,7 @@ package com.example.newsapp.adapter
 
 import android.content.Context
 import android.content.Intent
+import android.provider.Settings.Global.getString
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -34,14 +35,20 @@ class HobbiesAdapter(private val context: Context, private val hobbies:List<Hobb
         var position: Int? = 0
         init {
            itemView.textView2.setOnClickListener{
-             context.MakeToast("Clicked ${hobby} at ${position}")
+               hobby?.let {
+                   context.MakeToast(context.getString(R.string.Clicked)+" ${hobby}"+ context.getString(R.string.at)+"${position}",Toast.LENGTH_LONG)
+               }
+
            }
             itemView.imageButton.setOnClickListener{
-                val intent = Intent()
-                intent.action = Intent.ACTION_SEND
-                intent.putExtra(Intent.EXTRA_TEXT,hobby)
-                intent.type = "text/plain"
-                context.startActivity(Intent.createChooser(intent,"Share to"))
+                hobby?.let {
+                    val intent = Intent()
+                    intent.action = Intent.ACTION_SEND
+                    intent.putExtra(Intent.EXTRA_TEXT,hobby)
+                    intent.type = "text/plain"
+                    context.startActivity(Intent.createChooser(intent,context.getString(R.string.Share_to)))
+                }
+
             }
         }
         fun setData(hobby: Hobby?, pos:Int){

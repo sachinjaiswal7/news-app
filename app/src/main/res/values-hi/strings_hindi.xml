@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">समाचार ऐप</string>
+    <string name="enter_the_name">नाम दर्ज करें</string>
+    <string name="send_to_list_of_hobbies">शौक की सूची में भेजें</string>
+    <string name="line_10">पंक्ति 10</string>
+    <string name="you_are_redirected_to_new_page">आपको नए पृष्ठ पर पुनर्निर्देशित किया गया है</string>
+    <string name="Clicked">क्लिक</string>
+    <string name="at">क्लिक</string>
+    <string name="Share_to">
+साझा करें</string>
+</resources>
